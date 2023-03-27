@@ -1,0 +1,154 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('Images/cover.jpg');
+    background-size: cover;
+    color: black;
+    
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+  }
+  
+  nav li {
+    margin-left: 20px;
+    
+  }
+  
+  nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+    color: goldenrod;
+  }
+  
+  /* Main section styles */
+  section {
+    padding: 50px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+  section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  section p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  /** feature**/
+  h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  #features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  
+  .feature {
+    flex: 1 1 10%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .feature h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .feature img {
+    width: 100%;
+  }
+  .feature p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  
+  /* About section styles */
+  #about {
+    background-image: url('Images/todo.jpg');
+   color: black;
+   
+  }
+ 
+  /* Team section styles */
+  #team ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #team li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    flex-basis: 300px;
+  }
+  
+  #team h3 {
+    margin-top: 10px;
+  }
+  
+  #team p {
+    margin-bottom: 5px;
+  }
+  
+  /* Video section styles */
+  #video {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  #video iframe {
+    width: 560px;
+    height: 315px;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  
