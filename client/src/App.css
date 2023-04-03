@@ -1,53 +1,67 @@
 body {
-  background-image: url('images/back.png');
-  background-color: black;
-  background-repeat: no-repeat;
-  background-size: 100% ;
-  color:white;
-  padding: 20px;
-  margin:30px;
-  display: flex;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
   font-weight: 400;
+  color:rgb(41, 6, 6);
+  display: flex;
+  background-color: black;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+ 
+ 
+} 
+.main{ 
+  background-image: url('images/Picture\ by\ @enstijl.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 30px;
+}
+h1{
+  color: teal;
+  background-image: url('images/myImage.JPG');
+  background-size:contain;
+  background-repeat: no-repeat;
   
-  width: 100%;
-  height: 200%;
 }
 p {
-  color: brown;
   font-size: 25px;
+  color: Teal;
+  text-align: center;
+  
 }
 input[type="text"],[type="date"], [type="time"]{
-  background: linear-gradient(to left, #fff, transparent);
-
-  color: azure;
+  background:transparent;
+  
 }
 [type="nun"]{
   background-color: transparent;
 }
 input{
-  width:150%;
-  height: 40px;
+  width:65%;
+  height: 30px;
 }
-
-button{
-  color: azure;
-  }
 .btn, [type="submit"] {
-  background-color: brown;
-  width: 25%;
-  height: 50px;
+  background-color:teal;
+  width: 15%;
+  height: 35px;
+  border-radius: 8px;
+  color:rgb(244, 223, 193);
+  font-weight: bold;
 }
 .container {
-  width: 150%;
+  width: 100%;
  
 }
 @media screen and (max-width: 768px) {
   body {
   background-size: cover;
-  padding: 10px;
-  margin: 10px;
+  
   font-size: 16px;
   height: 100%;
   }
@@ -58,12 +72,8 @@ button{
   height: 30px;
   }
   
-  input{
-  width:100%;
-  height: 30px;
-  }
   
-  .btn, [type="submit"] {
+.btn, [type="submit"] {
   width: 50%;
   height: 40px;
   }
@@ -76,26 +86,26 @@ button{
   @media screen and (min-width: 768px) and (max-width: 1024px) {
   body {
   background-size: cover;
-  padding: 15px;
-  margin: 15px;
   font-size: 18px;
   height: 100%;
   }
+  .main{ 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    border-radius: 20px;
+  }
   input[type="text"],[type="date"], [type="time"]{
-  width: 80%;
-  height: 35px;
+  width: 70%;
+  height: 25px;
   
 
   }
   
-  input{
-  width:80%;
-  height: 35px;
-  }
-  
   .btn, [type="submit"] {
-  width: 35%;
-  height: 45px;
+  width: 20%;
+  height: 35px;
   }
   
   .container {
