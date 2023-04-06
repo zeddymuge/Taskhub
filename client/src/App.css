@@ -4,13 +4,44 @@ body {
   font-weight: 400;
   color:rgb(41, 6, 6);
   display: flex;
-  background-color: black;
+  background-image: url('images/cover.jpg');
   height: 100%;
   margin: 0;
   padding: 0;
  
  
 } 
+header {
+  background-color: transparent;
+  height: 60px;
+  width: 100%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  
+}
+
+nav li {
+  margin-left: 20px;
+  
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color:teal;
+}
+
 .main{ 
   background-image: url('images/Picture\ by\ @enstijl.jpg');
   background-repeat: no-repeat;

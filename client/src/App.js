@@ -132,12 +132,22 @@ function App() {
   
 
   return (
-    <div>
+    <div className='main'>
+      <header>
+		<nav>
+            <ul><li><a href="http://127.0.0.1:5500/my-project/client/src/Home.html">HOME</a></li>
+                <li><a href="http://127.0.0.1:5500/my-project/client/src/About.html">ABOUT</a></li>
+                <li><a href="http://localhost:3000/">SET TASKS</a></li>
+                <li><a href="http://127.0.0.1:5500/my-project/client/src/Login.html">SIGN IN</a></li>
+		
+            </ul>
+        </nav>
+        </header>
       
-      <h1>.</h1>
+      <h1> .</h1>
       <form   onSubmit={handleTaskSubmit}>
         <label>
-          Task:
+          Task:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input type="text" value={newTask} onChange={handleTaskChange} required />
         </label><br/><br/>
         <label>
@@ -145,15 +155,15 @@ function App() {
           <input type="text" value={newDescription} onChange={handleDescriptionChange} />
         </label><br/><br/>
         <label>
-          Date:
+          Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input type="date" value={newDate} onChange={handleDateChange} required/>
         </label><br/><br/>
         <label>
-          Time:
+          Time:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input type="time" value={newTime} onChange={handleTimeChange}required />
         </label><br/><br/>
         <button className='btn' type="submit">{editingTask ? 'Save' : 'Add'}</button>
-        {editingTask && <button type="button" onClick={handleCancelEdit}>Cancel</button>}
+        {editingTask && <button className='btn' type="button" onClick={handleCancelEdit}>Cancel</button>}
     </form> 
     <div className ="container"> 
     <h2>Task List</h2>
